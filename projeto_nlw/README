@@ -1,0 +1,13 @@
+##COMO FOI CRIADO O PROJETO
+ -- INSTALAR YARN PARA CRIAR PACKAGE.JSON
+ * yarn init -y
+
+ ## INSTALAR EXPRESS
+ - yarn add express >> (documentação - link: https://expressjs.com/pt-br/)
+ - yarn add @types/express - D >>  para instalar as tipagens do express
+ - yarn add typescript -D >> para instalar o typescript
+ - yarn tsc --init >> para criar o arquivo de configuração tsconfig.json do typescript
+ - yarn add ts-node-dev -D >> para fazer a tradução
+
+ ##PARA EXECUTAR O PROJETO
+ - yarn dev >> ele irá executar o script server.ts de desenvolvimento configurado no caminho ts-node-dev src/server.ts
