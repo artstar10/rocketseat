@@ -1,35 +1,10 @@
 import { Router } from "express"
-import { getCustomRepository } from "typeorm";
-import { SettingsRepository } from "./repositories/SettingsRepository";
+import { SettingsController } from "./controllers/SettingsController";
 
 const routes = Router();
 
+const settingsController = new SettingsController();
 
-/**
- * Tipos de parametros
- * Routes Params => Parametros de rotas
- * Query Params => Filtros e buscas
- * Body params = > filtros e buscas
- *
- * 
- *  **/
-
-
-
-
-routes.post("/settings", async (request, response) => {
-    const {chat, username} = request.body
-
-    const settingsRepository = getCustomRepository(SettingsRepository);
-
-    const settings = settingsRepository.create({
-        chat,
-        username
-    })
-
-    await settingsRepository.save(settings);
-
-    return response.json(settings);
-});
+routes.post("/settings", settingsController.create);
 
 export { routes };

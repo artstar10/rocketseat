@@ -11,3 +11,10 @@
 
  ##PARA EXECUTAR O PROJETO
  - yarn dev >> ele irá executar o script server.ts de desenvolvimento configurado no caminho ts-node-dev src/server.ts
+
+Banco de dados
+- yarn add typeorm yarn add reflect-metadata sqlite3 (documentação: https://typeorm.io/#/using-ormconfig)
+-  yarn typeorm migration:create -n CreateSettings - para criar a migration
+- yarn typeorm migration:run - executar a migration a criar o arquivo database.sqlite
+- yarn add uuid - 
+- yarn add @types/uuid -D - tipagem uuid
