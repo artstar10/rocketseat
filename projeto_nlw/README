@@ -14,7 +14,13 @@
 
 Banco de dados
 - yarn add typeorm yarn add reflect-metadata sqlite3 (documentação: https://typeorm.io/#/using-ormconfig)
--  yarn typeorm migration:create -n CreateSettings - para criar a migration
-- yarn typeorm migration:run - executar a migration a criar o arquivo database.sqlite
+- yarn typeorm migration:create -n CreateSettings - para criar a migration
+- yarn typeorm migration:run - executar a migration para criar o arquivo database.sqlite
 - yarn add uuid - 
 - yarn add @types/uuid -D - tipagem uuid
+- yarn typeorm migration:create -n CreateUsers - para criar migration Users
+- yarn typeorm migration:create -n createMessages - para criar tabela de mensagens
+
+Como executar uma migration?
+- yarn typeorm migration:run
+
