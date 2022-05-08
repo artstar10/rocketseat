@@ -1,3 +1,4 @@
-## para rodar o frontend do projeto você deverá entrar na pasta /web e rodar o comando abaixo:
+## para startar o frontend do projeto entre na pasta /web e rode o comando abaixo:
+```
 > npm run dev
-
+```
